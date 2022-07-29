@@ -1,6 +1,37 @@
+# A small responsive frontend web application
+
+The application lists the products(total of 15) available in the marketplace. A user is able to type and search for an item on the search bar. Items with similar letters will appear in a list below the search bar. Once there's input in the search bar, the user will have the option to clear the input and possibly search for a different product that's available.
+Kindly note the search is **case-sensitive**.
+
+---
+
+## Requirements
+
+You will need **Node.js** installed in order to get started. The Node Package Manager will allow installation of third party libraries. Therefore download the required version from [node.js.org]("https://nodejs.org/en/")
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+- This will install a lightweight development server
+- Webpack which will bundle up the files
+- Babel which will compile JavaScript code to JSX
+
+---
+
+## Installation of React-Bootstrap
+
+The files are customized with Bootstrap classes and CSS. Install Bootstrap and import it in the index.js file.
+
+I am using a **GitBash Terminal**
+
+```
+npm install react-bootstrap bootstrap
+```
+
+```
+import 'bootstrap/dist/css/bootstrap.css'
+```
 
 ## Available Scripts
 
@@ -29,42 +60,35 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Retool Utilities Tool
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To be able to parse the CSV file, I used [Retool Utilities Tool]("https://retool.com/utilities/convert-csv-to-json")
+to convert the CSV dump file to JSON data.
+Here is a link to the tutorial [Video]("https://www.youtube.com/watch?v=hyV71RJeuOI" "youtube tutorial").
+I created a stockData.js file on my src folder wherein I copied the JSON data and edited it using the **Beautify JSON** extension that's installed in my VS code.
+However I realized it would be easier for me to generate an API of the data since this option was also available on the Retool utilities site. So here is the API endpoint https://api-generator.retool.com/98pK0J/data
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Testing the App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I added the **--coverage** flag/property to my package.json file at **line 18** to enable me to visualize what percentage of my code is currently covered during testing.
+I was able to create a simple test to check whether the span element in the NavBar component was being rendered on the page. To run the test simply head to the terminal and type
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm test
+```
 
-## Learn More
+This test is available in the file
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```javascript
+App.test.js;
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**I also use the chrome extension axe DevTools to scan my page and fix any accessibility errors**
 
-### Code Splitting
+## Challenges I faced while working on this task
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- I encountered a debugging issue when trying to simply render products from the JSON file/API.
+- A png file of the error is available on the root folder. I realized that I was taking quite a lot of time to figure out this error and time being a factor I decided to use a different API.
+- Additionally, this is the first challenge I've come across that involves parsing a CSV file, I checked for solutions online and couldn't find an outright solution however I am curious to learn how one solves it.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* It was a fun, challenging and learning experience!!!
