@@ -76,7 +76,7 @@ const App = () => {
           <>
             <section>
               <div className='container'>
-                <h2 className='text-center fw-bolder my-3 text-danger'>HURRY AND GRAB YOUSELF THE BELOW PUPULAR MODELS!!!</h2>
+                <h2 className='text-center fw-bolder my-3 text-danger'>HURRY AND GRAB YOUSELF THE BELOW POPULAR MODELS!!!</h2>
                 <ul className='list-group'>
                     {
                       // Looping through the sorted array to display
