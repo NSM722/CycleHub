@@ -1,8 +1,12 @@
 # A small responsive frontend web application
 
-The application lists the top 3 popular products with users in the marketplace. A user is able browse the application and see the top 3 **trending** products
+The purpose of this application is to list the top 3 popular products with users in the marketplace. A user is able browse the application and see the top 3 **trending** products
 
-The section that has headings, bike pictures and lorem picsum test is just dummy data acting as placeholders
+The section that has headings, bike pictures and lorem picsum text is just dummy data acting as placeholders
+
+Data about the e-bikes is available on the root file in JSON format
+
+You are welcome to go ahead and edit the stockData.js file/or API data to determine whether the logic behind the application works!
 
 ---
 
@@ -10,7 +14,9 @@ The section that has headings, bike pictures and lorem picsum test is just dummy
 
 You will need **Node.js** installed in order to get started. The Node Package Manager will allow installation of third party libraries. Therefore download the required version from [node.js.org]("https://nodejs.org/en/")
 
-# Getting Started with Create React App
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -48,20 +54,20 @@ You may also see any lint errors in the console.
 
 ## Retool Utilities Tool
 
-To be able to parse the CSV file, I used [Retool Utilities Tool]("https://retool.com/utilities/convert-csv-to-json")
-to convert the CSV dump file to JSON data.
+To be able to parse the CSV file provided in this challenge, I used [Retool Utilities Tool]("https://retool.com/utilities/convert-csv-to-json")
+to convert it to JSON data.
 
 Here is a link to the tutorial [Video]("https://www.youtube.com/watch?v=hyV71RJeuOI" "youtube tutorial").
 
 I created a stockData.js file on my src folder wherein I copied the JSON data and edited it using the **Beautify JSON** extension that's installed in my VS code.
 
-However I realized it would be easier for me to generate an API of the data since this option was also available on the Retool utilities site. So here is the API endpoint https://api-generator.retool.com/98pK0J/data
+On the same site, one can also generate API data of the CSV dump file So here is the API endpoint https://api-generator.retool.com/98pK0J/data
+
+---
 
 ## Testing the App
 
 I added the **--coverage** flag/property to my package.json file at **line 18** to enable me to visualize what percentage of my code is currently covered during testing.
-
-I was able to create a simple test to check whether the span element in the NavBar component was being rendered on the page. Due to conflicting results in my code I am currently perusing the React Testing Library to find the appropriate way to test the logic behind find the popular models
 
 To launch the test runner in the interactive watch mode, simply head to the terminal and type
 
@@ -76,13 +82,3 @@ App.test.js;
 ```
 
 **I also use the chrome extension axe DevTools to scan my page and fix any accessibility errors**
-
-## Challenges I faced while working on this task
-
-- This is the first challenge I've come across that involves parsing a CSV file, I checked for solutions online and came across the **React Papaparse library**. I wasn't able to manage reading the documentation and applying it on my code however I am curious to learn how your team tackles this task since you mentioned it's similar to what you do on a daily.
-
-- I tried to make my solution(s) effective as possible by trying to cut down on the number of iterations I made and the multiple arrays that were created. If I had ample time I would find ways to create and use helper functions instead of the multiple array methods I've used.
-
-- I assumed that what makes a model popular is the number of times it turns up in the database file(and this is a bit conflicting if I have e.g three models that pop up equal amount of times). So again I am curious to know how you would decide what's popular in such a case as this is a bit vague.
-
-* It was a fun, challenging and learning experience!!!
