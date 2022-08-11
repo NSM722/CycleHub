@@ -80,7 +80,7 @@ const App = () => {
                 <ul className='list-group'>
                     {
                       // Looping through the sorted array to display
-                      // the first 3 models
+                      // the first 3 modelsgit
                       sortedUniquesArray.map((itemToDisplay, index) => {
                         return (
                           <li key={index}
