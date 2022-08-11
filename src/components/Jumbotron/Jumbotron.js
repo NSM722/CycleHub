@@ -10,12 +10,12 @@ const Jumbotron = () => {
           <div className="container text-center">
             <h1 className="fw-bolder">Welcome To Our Marketplace</h1> 
             <p className='fs-3'>This is the place where trusted private sellers 
-              and smart buyers meet for trading electric bikes.
+              and smart buyers meet to trade e-bikes.
               <br />
-              Here is a list of all the models available.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis ducimus aperiam!
               <br />
-              Please bear with us as we are working on listing
-              the <b>top 3 popular models</b>
+              <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem officiis ducimus aperiam! Voluptatem expedita tempore cumque saepe, 
+                nulla porro inventore praesentium sapiente aut illo voluptas quia nemo at ipsam soluta quidem ullam iure in odio explicabo!</b>
             </p> 
           </div>
         </div>
