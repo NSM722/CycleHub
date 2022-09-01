@@ -12,7 +12,7 @@ You are welcome to go ahead and edit the stockData.js file/or API data to determ
 
 ## Requirements
 
-You will need **Node.js** installed in order to get started. The Node Package Manager will allow installation of third party libraries. Therefore download the required version from [node.js.org]("https://nodejs.org/en/")
+You will need **Node.js** installed in order to get started. The Node Package Manager will allow installation of third party libraries. Therefore download the required version from [node.js.org](https://nodejs.org/en/)
 
 ---
 
