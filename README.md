@@ -57,7 +57,7 @@ You may also see any lint errors in the console.
 To be able to parse the CSV file provided in this challenge, I used [Retool Utilities Tool]("https://retool.com/utilities/convert-csv-to-json")
 to convert it to JSON data.
 
-Here is a link to the tutorial [Video]("https://www.youtube.com/watch?v=hyV71RJeuOI" "youtube tutorial").
+Here is a link to the tutorial [Video](https://www.youtube.com/watch?v=hyV71RJeuOI "youtube tutorial").
 
 I created a stockData.js file on my src folder wherein I copied the JSON data and edited it using the **Beautify JSON** extension that's installed in my VS code.
 
