@@ -1,4 +1,4 @@
-# A small responsive frontend web application
+# CycleHub web application
 
 The purpose of this application is to list the top 3 popular products with users in the marketplace. A user is able browse the application and see the top 3 **trending** products
 
@@ -7,6 +7,8 @@ The section that has headings, bike pictures and lorem picsum text is just dummy
 Data about the e-bikes is available on the root file in JSON format
 
 You are welcome to go ahead and edit the stockData.js file/or API data to determine whether the logic behind the application works!
+
+Check out the [live demo](https://phenomenal-parfait-a0e90c.netlify.app/ "BikEEE")
 
 ---
 
