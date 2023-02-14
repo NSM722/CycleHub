@@ -10,6 +10,8 @@ You are welcome to go ahead and edit the stockData.js file/or API data to determ
 
 Check out the [live demo](https://phenomenal-parfait-a0e90c.netlify.app/ "BikEEE")
 
+<img width="100%" alt="cyclehub" src="https://user-images.githubusercontent.com/83452606/218722375-2c43a5d4-6aa5-463d-8a45-826b4e110ef5.png">
+
 ---
 
 ## Requirements
