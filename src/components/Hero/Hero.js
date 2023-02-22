@@ -6,6 +6,7 @@ import {
   getUniqueBikes,
   sortInDescendingOrder
 } from './../../helpers';
+import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -15,11 +16,11 @@ const Hero = () => {
   const uniqueBikes = getUniqueBikes(bikeModelsCount)
   const sortedUniqueBikes = sortInDescendingOrder(uniqueBikes)
 
-  let bikesToDisplay = sortedUniqueBikes.map((itemToDisplay, index) => (
+  let bikesToDisplay = sortedUniqueBikes.map(({ bikeType, count }) => (
     <li
-      key={index}
+      key={uuidv4()}
       className='list-group-item list-group-item-dark fs-4 fw-bold'>
-      {`${itemToDisplay.bikeType.toUpperCase()}  -------> (${itemToDisplay.count} in stock)`}
+      {`${bikeType.toUpperCase()}  -------> (${count} in stock)`}
     </li>
   ))
 
