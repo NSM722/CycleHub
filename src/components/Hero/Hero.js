@@ -25,13 +25,11 @@ const Hero = () => {
   ))
 
   return (
-    <section>
-      <div className='container'>
-        <h2 className='text-center fw-bolder my-3 text-danger'>HURRY AND GRAB YOURSELF THE BELOW POPULAR MODELS!!!</h2>
-        <ul className='list-group'>
-          {bikesToDisplay}
-        </ul>
-      </div>
+    <section className='container'>
+      <h2 className='text-center fw-bolder my-3 text-danger'>HURRY AND GRAB YOURSELF THE BELOW POPULAR MODELS!!!</h2>
+      <ul className='list-group'>
+        {bikesToDisplay}
+      </ul>
     </section>
   );
 }
